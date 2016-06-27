@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href='css/ie_fixes.css' type="text/css" media="screen, projection" />
+    <![endif]-->
+
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+
+
+    <link rel="stylesheet" href="css/style2.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+  <!--  <script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event)
+        {
+            var now = new Date().getTime();
+
+            var t = performance.timing;
+            var n = performance.navigation;
+
+
+            var page_load_time = now - t.navigationStart;
+            var constart= t.connectStart;
+            var fetchStart= t.fetchStart;
+            var requestStart= t.requestStart;
+            var responseStart= t.responseStart;
+            var responseEnd= t.responseEnd;
+            var conEnd= t.connectEnd;
+
+            //  var page_load_time = now - t.navigationStart;
+            //  var constart=new Date().getTime()- t.connectStart;
+            //   var fetchStart=new Date().getTime()-  t.fetchStart;
+            //   var requestStart= new Date().getTime()- t.requestStart;
+            //   var responseStart=new Date().getTime()-  t.responseStart;
+            //  var responseEnd=new Date().getTime()-  t.responseEnd;
+            //  var conEnd=new Date().getTime()-  t.connectEnd;
+
+
+            <!-- derived values -->
+            var latency=responseStart-constart;
+            var resPonseDuration=responseEnd- responseStart;
+            var requestDuration=responseStart-requestStart;
+
+
+
+
+
+
+            document.getElementById("pLoad").innerHTML = "Page Load Time :"+ page_load_time/1000;
+            document.getElementById("conStart").innerHTML ="Connection start: " +constart;
+            document.getElementById("fStart").innerHTML ="Page fetch start : "+ fetchStart;
+            document.getElementById("reqStart").innerHTML =" Page request start :"+requestStart;
+            document.getElementById("respStart").innerHTML ="Server response start : "+ responseStart;
+            document.getElementById("respEnd").innerHTML = "Server response End : "+responseEnd;
+            document.getElementById("lat").innerHTML ="Latency : "+ latency;
+            document.getElementById("respd").innerHTML ="response duration:"+ resPonseDuration;
+            document.getElementById("resqd").innerHTML = " request duration:"+requestDuration;
+            document.getElementById("conEnd").innerHTML = " connection End:"+ conEnd;
+
+
+
+        });
+    </script>
+
+
+
+</head>
+<body >
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<nav id="navigation">
+
+    <ul>
+        <li> <a href="index.html"> home</a></li>
+        <li> <a href="test2.html">  test 2</a></li>
+        <li> <a href="test3.html">  test 3</a></li>
+        <li> <a href="test4.html">  test 4</a></li>
+
+    </ul>
+</nav>
+
+<div class="con">
+    <div class="content3">
+        <h1>Test Page 3</h1>
+
+        <div class="Row">
+            <div class="Column">
+                <video width="320" height="240" controls class="tv">
+                    <source src="videos/vid1.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="Column">
+                <video width="320" height="240" controls class="tv">
+                    <source src="videos/vid2.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Column">
+                <video width="320" height="240" controls class="tv">
+                    <source src="videos/vid3.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="Column">
+                <video width="320" height="240" controls class="tv">
+                    <source src="videos/vid4.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Column">
+                <video width="320" height="240" controls class="tv">
+                    <source src="videos/vid5.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="Column">
+                <video width="320" height="240" controls class="tv">
+                    <source src="videos/vid6.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Column">
+                <video width="320" height="240" controls class="tv">
+                    <source src="videos/vid7.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="Column">
+                <video width="320" height="240" controls class="tv">
+                    <source src="videos/vid8.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Column">
+                <video width="320" height="240" controls class="tv">
+                    <source src="videos/vid9.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="Column">
+                <video width="320" height="240" controls class="tv">
+                    <source src="videos/vid10.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Column"><img src="img/photo01.jpg" alt="description" class="tv" /></div>
+            <div class="Column"><img src="img/photo02.jpg" alt="description" class="tv" /></div>
+        </div>
+        <div class="Row">
+            <div class="Column"><img src="img/photo03.jpg" alt="description" class="tv" /></div>
+            <div class="Column"><img src="img/photo04.jpg" alt="description" class="tv" /></div>
+        </div>
+        <div class="Row">
+            <div class="Column"><img src="img/photo05.jpg" alt="description" class="tv" /></div>
+            <div class="Column"><img src="img/photo06.jpg" alt="description" class="tv" /></div>
+        </div>
+        <div class="Row">
+            <div class="Column"><img src="img/photo07.jpg" alt="description" class="tv" /></div>
+            <div class="Column"><img src="img/photo08.jpg" alt="description" class="tv" /></div>
+        </div>
+
+
+
+
+    </div>
+    <div class="result">
+        <li> <div id="conStart"></div> </li>
+        <li> <div id="fStart"></div> </li>
+        <li> <div id="reqStart"></div> </li>
+        <li> <div id="respStart"></div> </li>
+        <li><div id="respEnd"></div> </li>
+        <li><div id="conEnd"></div> </li>
+        <li> <div id="pLoad"></div> </li>
+        <li> <div id="lat"></div> </li>
+        <li> <div id="resqd"></div> </li>
+        <li> <div id="respd"></div> </li>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+</body>
+</html>

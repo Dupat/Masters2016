@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML5 tests - video</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/quirksmode.css" />
+    <link rel="stylesheet" href="teststyles.css" />
+    <script type="text/javascript" src="/quirksmode.js"></script>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+
+<body class="testpage">
+
+<h2>HTML5 tests - video</h2>
+
+<div id="header"></div>
+
+<p class="intro">This page tests the <code>&lt;video&gt;</code> tag.</p>
+
+<p>On the mobile side iPhone supports H.264, and that&#8217;s it.</p>
+
+
+
+<h3>Test cases</h3>
+
+<p>Note the syntax; IE and Firefox need the source and type.<p>
+
+<pre>
+&lt;video controls&gt;
+	&lt;source src="../videos/big_buck_bunny.mp4" type="video/mp4"&gt;
+	&lt;p&gt;Your browser does not support H.264/MP4.&lt;/p&gt;
+&lt;/video&gt;
+</pre>
+
+<p>Fallback content only supported when the browser does not support the <code>&lt;video&gt;</code> tag at all. Bloody useless; what you&#8217;d want is to switch to fallback when, say, you only have WebM available and the browser doesn&#8217;t support that codec.</p>
+
+<h4>H.264/MP4</h4>
+
+<video controls>
+    <source src="videos/big_buck_bunny.mp4" type="video/mp4">
+    <p>Your browser does not support H.264/MP4.</p>
+</video>
+
+<h4>WebM</h4>
+
+<video controls>
+    <source src="videos/big_buck_bunny.webm" type="video/webm">
+    <p>Your browser does not support WebM.</p>
+</video>
+
+<h4>Ogg/Theora</h4>
+
+<video controls>
+    <source src="videos/big_buck_bunny.ogv" type="video/ogg">
+    <p>Your browser does not support Ogg/Theora.</p>
+</video>
+
+<div id="footer"><a href="/home.html">Home</a> <a href="/sitemap.html">Sitemap</a>
+
+</div>
+</body>
+</html>

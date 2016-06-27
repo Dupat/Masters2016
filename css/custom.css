@@ -1,0 +1,76 @@
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 120px;
+    height: 75px;
+}
+
+.tp {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 120px;
+    height: 75px;
+}
+
+.tv {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 240px;
+    height: 150px;
+}
+
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.con {
+    min-height:80%;
+    position:relative;
+}
+
+.content {
+    width: 50%;
+    height: 1000px; /* Changed this height */
+    padding-bottom:10px;
+
+
+}
+
+
+.content2{
+    width: 50%;
+    height: 1000px; /* Changed this height */
+    padding-bottom:60px;
+
+}
+
+.content3{
+    width: 50%;
+    height: 1000px; /* Changed this height */
+    padding-bottom:10px;
+
+}
+.result{
+
+
+clear:left;
+    bottom:0;
+    width:100%;
+    height:60px;
+    font-size: 100%;
+}
+
